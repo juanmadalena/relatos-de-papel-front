@@ -57,7 +57,7 @@ export const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="relative w-full max-w-3xl md:flex justify-center items-center hidden">
+                <div className="relative w-full max-w-3xl md:flex justify-center items-center hidden" id="book_collage_container">
                     <BookCollage />
                 </div>
             </section>
