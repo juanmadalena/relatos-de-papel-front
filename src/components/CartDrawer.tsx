@@ -53,7 +53,7 @@ export const CartDrawer = ({ isOpen, setIsOpen }: CartDrawerProps) => {
                 {
                     items.length > 0 &&
                     <div className="p-4 border-t border-neutral-400">
-                        <p className="text-lg text-right font-medium mb-2">Total: {items.reduce((acc, item) => acc + item.price, 0).toFixed(2)}€</p>
+                        <p className="text-lg text-right font-medium mb-2">Total: {items.reduce((acc, item) => acc + (item.price * (item?.quantity || 1 )), 0).toFixed(2)}€</p>
                         <button onClick={(handleCheckout)} className="bg-orange-500 text-white p-2 rounded w-full">
                             Checkout
                         </button>

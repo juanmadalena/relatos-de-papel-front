@@ -16,7 +16,7 @@ export const CartButton = () => {
                 {
                     items.length > 0 && (
                         <div className="absolute top-2 md:top-1 right-2 md:right-1 w-6 h-6 bg-orange-700 text-xs text-white flex items-center justify-center rounded-full">
-                            {items.length}
+                            {items.reduce((acc, item) => acc + (item?.quantity || 0), 0)}
                         </div>
                     )
                 }

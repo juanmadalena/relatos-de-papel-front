@@ -7,4 +7,5 @@ export interface Book {
     year: number;
     genre: string;
     price: number;
+    quantity?: number;
 }

@@ -40,6 +40,7 @@ export const CartProvider = ({ children }:any) => {
 
 
     const addToCart = async (book: any) => {
+        console.log("add to cart context")
         dispatch({
             type: 'addToCart',
             payload: book

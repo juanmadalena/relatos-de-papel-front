@@ -12,16 +12,43 @@ export type CartAction =
 export const cartReducer = ( state: CartState, action: CartAction ): CartState => {
     switch (action.type) {
         case 'addToCart':
-            const items = [...state.items, action.payload]
+
+            let items;
+
+            const bookInCart = state.items.find(item => item.id === action.payload.id)
+            if (bookInCart) {
+                console.log(bookInCart.quantity)
+                bookInCart.quantity = ++bookInCart.quantity!
+                console.log(bookInCart.quantity)
+                items = [...state.items]
+            } else {
+                action.payload.quantity = 1
+                items = [...state.items, action.payload]
+            }
+
             localStorage.setItem('cart', JSON.stringify(items))
 
             return {
                 items
             }
+
         case 'removeFromCart':
-            return {
-                items: state.items.filter(item => item !== action.payload)
+
+            let books;
+
+            const bookToDelete = state.items.find(item => item.id === action.payload.id)
+            if (bookToDelete?.quantity === 1) {
+                books = state.items.filter(item => item !== action.payload)
+            } else {
+                bookToDelete!.quantity = bookToDelete!.quantity! - 1
+                books = [...state.items]
             }
+
+            localStorage.setItem('cart', JSON.stringify(books))
+            return{
+                items: books
+            }
+
         case 'clearCart':
             localStorage.removeItem('cart')
             return {

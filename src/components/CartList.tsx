@@ -15,6 +15,7 @@ export const CartList = () => {
                             <div>
                                 <h3 className="text-2xl font-semibold">{item.title}</h3>
                                 <p className="text-lg">{item.price}€</p>
+                                <h4 className="text-lg">Unidades: {item?.quantity}</h4>
                             </div>
                         </div>
                         <button onClick={() => removeFromCart(item)}>❌</button>

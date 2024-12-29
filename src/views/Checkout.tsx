@@ -52,7 +52,7 @@ export const Checkout = () => {
                     <p>Total</p>
                     <p className="text-2xl font-semibold">
                         {
-                            items.reduce((acc, item) => acc + item.price, 0).toFixed(2)
+                            items.reduce((acc, item) => acc + item.price * (item?.quantity || 1), 0).toFixed(2)
                         }€
                     </p>
                 </div>
