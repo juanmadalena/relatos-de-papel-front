@@ -7,5 +7,6 @@ export interface Book {
     year: number;
     genre: string;
     price: number;
+    rating: number;
     quantity?: number;
 }

@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { BookContext } from "../context/booksContext/BookContext";
 import { CartContext } from "../context/cartContext/CartContext";
 import { Book } from "../interface";
+import { Rating } from "../components/Rating";
 
 export const BookDetails = () => {
 
@@ -31,6 +32,9 @@ export const BookDetails = () => {
                             <div className="flex-grow flex justify-center flex-col">
                                 <div>
                                     <h2 className="text-5xl md:text-6xl">{book.title}</h2>
+                                </div>
+                                <div className="mt-4">
+                                    <Rating rating={book.rating}/>
                                 </div>
                                 <div className="mt-4">
                                     <p className="text-neutral-600">Descripción:</p>

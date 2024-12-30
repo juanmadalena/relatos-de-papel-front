@@ -9,6 +9,7 @@ export const books = [
     year: 1969,
     genre: "Crime, Drama",
     price: 14.99,
+    rating: 5, 
   },
   {
     id: 2,
@@ -16,10 +17,12 @@ export const books = [
     author: "Margaret Atwood",
     description:
       "Set in a dystopian future, The Handmaid's Tale explores themes of power, oppression, and resistance through the eyes of Offred, a woman forced to bear children for a ruling class.",
-    image: "https://s26162.pcdn.co/wp-content/uploads/2021/10/Dust-jacket-edition-illustration-American-The-Handmaids-1986.jpg",
+    image:
+      "https://s26162.pcdn.co/wp-content/uploads/2021/10/Dust-jacket-edition-illustration-American-The-Handmaids-1986.jpg",
     year: 1985,
     genre: "Dystopian, Fiction",
     price: 12.49,
+    rating: 4, 
   },
   {
     id: 3,
@@ -27,10 +30,12 @@ export const books = [
     author: "Joseph Heller",
     description:
       "A darkly comedic exploration of the absurdities of war, Catch-22 follows Captain John Yossarian as he attempts to escape the madness of World War II.",
-    image: "https://s26162.pcdn.co/wp-content/uploads/2021/10/4cc4b6-20150304-catch22.jpg",
+    image:
+      "https://s26162.pcdn.co/wp-content/uploads/2021/10/4cc4b6-20150304-catch22.jpg",
     year: 1961,
     genre: "Satire, War Fiction",
     price: 10.99,
+    rating: 3, 
   },
   {
     id: 4,
@@ -38,10 +43,12 @@ export const books = [
     author: "Jane Austen",
     description:
       "A classic romantic novel, Pride and Prejudice delves into the lives of Elizabeth Bennet and Mr. Darcy as they navigate love, social expectations, and personal growth.",
-    image: "https://s26162.pcdn.co/wp-content/uploads/2021/10/3b47d124002685f2a3c67e47383232c7.jpg",
+    image:
+      "https://s26162.pcdn.co/wp-content/uploads/2021/10/3b47d124002685f2a3c67e47383232c7.jpg",
     year: 1813,
     genre: "Romance, Fiction",
     price: 8.99,
+    rating: 5, 
   },
   {
     id: 5,
@@ -53,6 +60,7 @@ export const books = [
     year: 2020,
     genre: "Short Stories, Magical Realism",
     price: 9.49,
+    rating: 4, 
   },
   {
     id: 6,
@@ -64,6 +72,7 @@ export const books = [
     year: 1949,
     genre: "Dystopian, Political Fiction",
     price: 11.99,
+    rating: 5, 
   },
   {
     id: 7,
@@ -75,6 +84,7 @@ export const books = [
     year: 1960,
     genre: "Southern Gothic, Coming-of-Age",
     price: 13.49,
+    rating: 4, 
   },
   {
     id: 8,
@@ -86,6 +96,7 @@ export const books = [
     year: 1925,
     genre: "Tragedy, Historical Fiction",
     price: 9.99,
+    rating: 3, 
   },
   {
     id: 9,
@@ -97,6 +108,7 @@ export const books = [
     year: 1851,
     genre: "Adventure, Classic Fiction",
     price: 15.49,
+    rating: 2, 
   },
   {
     id: 10,
@@ -104,9 +116,11 @@ export const books = [
     author: "J.D. Salinger",
     description:
       "A coming-of-age novel that explores teenage rebellion and alienation through the eyes of the iconic Holden Caulfield.",
-    image: "https://s26162.pcdn.co/wp-content/uploads/2021/10/The-Catcher-in-the-Rye-First-Edition-cover-E.-Michael-Mitchell.jpg",
+    image:
+      "https://s26162.pcdn.co/wp-content/uploads/2021/10/The-Catcher-in-the-Rye-First-Edition-cover-E.-Michael-Mitchell.jpg",
     year: 1951,
     genre: "Fiction, Coming-of-Age",
     price: 10.49,
+    rating: 3, 
   },
 ];
