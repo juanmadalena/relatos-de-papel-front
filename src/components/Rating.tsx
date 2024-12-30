@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export const Rating = ({ rating = 3, maxStars = 5 }) => {
-  const [hovered, setHovered] = useState(0);
-  const [selectedRating, setSelectedRating] = useState(rating);
+  const [hovered, _setHovered] = useState(0);
+  const [selectedRating, _setSelectedRating] = useState(rating);
 
   return (
     <div className="flex gap-1">
